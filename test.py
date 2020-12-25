@@ -1,7 +1,6 @@
 import pyAlgor.test_alg as test
 import pyAlgor.mathematics.math_basic as mb
 import pyAlgor.sort.sorting as sort
-import pyAlgor.cryptography.rsa as rsa
 
 print('test file')
 
@@ -22,5 +21,6 @@ print('test file')
 # print('test bubble sort')
 # print(sort.bubble_sort([1,5,2,14,7,9,3]))
 
-print('test rsa')
-print(rsa.generate_keys(17, 41))
+print(mb.fibonacci(3))
+print(mb.fibonacci(6))
+print(mb.fibonacci(11))

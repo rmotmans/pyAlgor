@@ -1,4 +1,4 @@
-import math
+#import math
 
 '''
 Calculate the greatest common divisor of two integers a and b.
@@ -66,3 +66,23 @@ Returns True or Falses
 '''
 def is_prime(a):
     return ''
+
+
+
+'''
+Fibonacci sequence
+Returns the n'th value of the sequence
+'''
+def fibonacci(n, memo = {}):
+    if n == 1:
+        return 0
+    if n == 2:
+        return 1
+
+    if n in memo:
+        return memo[n]
+
+    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+    return memo[n]
+
+
