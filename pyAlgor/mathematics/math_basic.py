@@ -86,3 +86,28 @@ def fibonacci(n, memo = {}):
     return memo[n]
 
 
+
+'''
+howSum function
+Input an integer and a list of integers.
+Returns a list of integers from the input list that sum up to the input integer if possible, 
+otherwise returns null (None)
+'''
+def how_sum(targetSum, numbers, memo = None):
+    if memo is None:
+        memo = {}
+
+    if targetSum in memo: return memo[targetSum]
+    if targetSum == 0: return []
+    if targetSum < 0: return None
+
+    for number in numbers:
+        remainder = targetSum - number
+        remainder_result = how_sum(remainder, numbers, memo)
+        if remainder_result is not None:
+            remainder_result.append(number)
+            memo[targetSum] = remainder_result
+            return remainder_result
+    
+    memo[targetSum] = None
+    return None

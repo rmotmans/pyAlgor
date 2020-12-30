@@ -4,23 +4,12 @@ import pyAlgor.sort.sorting as sort
 
 print('test file')
 
-# test.test_function('test input')
+# print(mb.fibonacci(3))
+# print(mb.fibonacci(6))
+# print(mb.fibonacci(11))
 
-# output = test.squared(4)
-# print(output)
-
-# print('test gcd:')
-# print(mb.greatest_common_divisor(49, 21))
-
-# print('test extended euclidian alg')
-# print(mb.extended_euclidian_algorithm(48, 21))
-
-# print('test prime factors:')
-# print(mb.prime_factors(48*5*17))
-
-# print('test bubble sort')
-# print(sort.bubble_sort([1,5,2,14,7,9,3]))
-
-print(mb.fibonacci(3))
-print(mb.fibonacci(6))
-print(mb.fibonacci(11))
+print(mb.how_sum(7, [2, 4]))
+print(mb.how_sum(7, [2, 3]))
+print(mb.how_sum(15, [9, 7]))
+print(mb.how_sum(17, [2, 3, 4]))
+print(mb.how_sum(300, [7, 14]))
